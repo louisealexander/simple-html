@@ -6,29 +6,79 @@
     <title>Monkey</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <style>
+        body{
+            background-color: lightyellow;
+        }
         img{
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
             object-fit: cover;
+        }
+        h1, h4{
+            width: 600px;
+        }
+        h1{
+            font-size: 45px;
+            font-family: cursive ;
+            color: chocolate;
+        }
+        h4{
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: cornflowerblue;
+        }
+        p{
+            width: 200px;
+            font-size: 14px;
+            font-family: cursive;
+            color: olive;
+            font-weight: bold;
         }
         #gallery-container{
             display: inline-block;
+            font-size: 0px;
         }
+        .image-container{
+            display: inline-block;
+            vertical-align: top;
+        }
+        #special-word{
+            color: indianred;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+        }
+        #capuchin-monkey{
+            color: brown;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #forest{
+            color: orangered;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+        #ominously{
+            color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 30px;
+        }
+        
     </style>
 </head>
 
 <body>
-    <h1>Types of Monkey</h1>
-    <p>Some text that I will have later</p>
+    <h1>Types of <span id = "special-word">Monkey</span></h1>
+    <h4>Monke</h4>
     <div id="gallery-container">
         <div class="image-container">
-            <img src="/images/capuchin.jpg" alt="a capuchin" />
+            <img src="images/capuchin.jpg" alt="a capuchin" />
+            <p>A <span id = "capuchin-monkey">Capuchin Monkey</span> sticking his tongue out in front of a fence.</p>
         </div>
         <div class="image-container">
-            <img src="/images/baboon.jpg" alt="a baboon" />
+            <img src="images/baboon.jpg" alt="a baboon" />
+            <p>A Baboon perched on top of a brick wall in a <span id = "forest">forest</span>.</p>
         </div>
-        <div class="'image-container">
-            <img src="/images/chimpanzee.jpg" alt="a chimpanzee" />
+        <div class="image-container">
+            <img src="images/chimpanzee.jpg" alt="a chimpanzee" />
+            <p>A Chimpanzee standing very <span id = "ominously">ominously</span> on a stock photo background.</p>
         </div>
     </div>
 </body>
